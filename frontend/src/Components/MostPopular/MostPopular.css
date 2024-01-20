@@ -1,0 +1,15 @@
+.mostpopular {
+  margin-top: 80px;
+  max-width: 1292px;
+  margin: 0 auto;
+  margin-top: 115px;
+}
+
+.mostpopular h2 {
+  margin-bottom: 30px;
+}
+
+.mostpopular-container {
+  display: flex;
+  gap: 24px;
+}

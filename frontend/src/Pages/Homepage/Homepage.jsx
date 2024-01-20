@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../../Components/Hero/Hero';
 import HeroCategories from '../../Components/HeroCategories/HeroCategories';
+import MostPopular from '../../Components/MostPopular/MostPopular';
 
 
 const Homepage = () => {
@@ -8,6 +9,7 @@ const Homepage = () => {
     <div>
       <Hero/>
       <HeroCategories/>
+      <MostPopular/>
     </div>
   )
 }
