@@ -1,0 +1,71 @@
+.navbar {
+  background: #000;
+}
+
+.navbar-container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-rightsidesection {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-categories-box {
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-categories-box p {
+  color: #FAFAFA;
+  font-weight: 700;
+}
+
+.navbar-searchbox {
+  display: flex;
+  background: #FAFAFA;
+  padding: 2px 13px 2px 3px;
+  border-radius: 27px;
+  min-width: 403px;
+  margin-left: 54px;
+}
+
+.navbar-searchbox img {
+  padding: 7px;
+  border-radius: 50%;
+  border: 1.8px solid #000;
+  margin-right: 11px;
+}
+
+.navbar-searchbox input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar-searchbox input::placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: 70px;
+}
+
+.navbar-profilepicture-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #FAFAFA;
+  overflow: hidden;
+  margin-left: 44px;
+}
