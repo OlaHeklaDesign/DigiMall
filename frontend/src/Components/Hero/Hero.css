@@ -1,0 +1,61 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background: #FFF7AC;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 1292px;
+  margin: 53px auto;
+}
+
+.hero-left {
+  padding: 55px 0 55px 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.hero-right img {
+  position: absolute;
+  bottom: 0;
+  right: 210px;
+}
+
+.hero-left h1 {
+  font-size: 50px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.hero-left h1 span {
+  font-weight: 800;
+}
+
+.hero-inputobox {
+  padding: 13px 18px;
+  border-radius: 27px;
+  border: 1px solid #000;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  max-width: 362px;
+}
+
+.hero-inputobox img {
+  margin-right: 14px;
+}
+
+.hero-inputobox input::placeholder {
+  font-size: 14px;
+}
+
+.hero-inputobox input {
+  border: none;
+  outline: none;
+}
