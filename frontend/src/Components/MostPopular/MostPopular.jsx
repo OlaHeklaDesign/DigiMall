@@ -13,7 +13,7 @@ const MostPopular = () => {
       <h2>Most Popular</h2>
       <div className="mostpopular-container">
         {firstFourProducts.map((product, index) => (
-          <ProductItem key={index} name={product.name} main_image={product.main_image} price={product.price} />
+          <ProductItem key={index} name={product.name} main_image={product.main_image} price={product.price} id={product.id} />
         ))}
       </div>
       <button>See all products</button>
