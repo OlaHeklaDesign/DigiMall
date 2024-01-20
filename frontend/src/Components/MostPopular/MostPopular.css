@@ -3,6 +3,10 @@
   max-width: 1292px;
   margin: 0 auto;
   margin-top: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mostpopular h2 {
@@ -12,4 +16,18 @@
 .mostpopular-container {
   display: flex;
   gap: 24px;
+}
+
+.mostpopular button {
+  padding: 10px 26px;
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 34px;
 }

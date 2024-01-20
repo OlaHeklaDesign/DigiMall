@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../../Components/Hero/Hero';
 import HeroCategories from '../../Components/HeroCategories/HeroCategories';
 import MostPopular from '../../Components/MostPopular/MostPopular';
+import PopularGiftCategoriesHero from '../../Components/PopularGiftCategoriesHero/PopularGiftCategoriesHero';
 
 
 const Homepage = () => {
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Hero/>
       <HeroCategories/>
       <MostPopular/>
+      <PopularGiftCategoriesHero/>
     </div>
   )
 }

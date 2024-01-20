@@ -7,7 +7,7 @@ const ProductItem = ({main_image, name, price}) => {
   return (
     <div className='productitem'>
       <div className="productitem-image-box">
-        <img src={main_image} alt={name} />
+        <img className="productitem-image" src={main_image} alt={name} />
       </div>
       <div className="productitem-content">
         <p className="productitem-name">{name}</p>

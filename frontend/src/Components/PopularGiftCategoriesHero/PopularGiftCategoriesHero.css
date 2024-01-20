@@ -1,0 +1,13 @@
+.populargifts {
+  max-width: 1292px;
+  margin: 139px auto 0 auto;
+}
+
+.populargifts h2 {
+  margin-bottom: 34px;
+}
+
+.populargifts-container {
+  display: flex;
+  justify-content: space-between;
+}

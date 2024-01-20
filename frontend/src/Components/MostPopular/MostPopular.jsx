@@ -16,6 +16,7 @@ const MostPopular = () => {
           <ProductItem key={index} name={product.name} main_image={product.main_image} price={product.price} />
         ))}
       </div>
+      <button>See all products</button>
     </div>
   )
 }
