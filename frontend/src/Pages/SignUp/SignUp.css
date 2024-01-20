@@ -1,0 +1,93 @@
+.signup {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+} 
+
+.signup-right {
+  background: #FFF7AC;
+  max-width: 760px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-left {
+  margin-left: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 329px;
+  width:100%;
+}
+
+.signup-logo {
+  margin-bottom: 34px;
+}
+
+.signup-left h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 12px;
+}
+
+.signup-left h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+
+.signup-input-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.signup-left input {
+  padding: 13px 17px;
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 13px;
+  background: transparent;
+}
+
+.signup-left input:last-of-type {
+  margin-bottom: 0px;
+}
+
+.signup-left input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A9A9A9;
+}
+
+.signup-button {
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  background: #000;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 27px;
+}
+
+.login-alreadyhaveaccount {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
