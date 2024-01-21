@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 import all_product from '../Components/Assets/all_product';
+import ReviewsDisplay from '../Components/ReviewsDisplay/ReviewsDisplay';
 
 
 const Product = () => {
@@ -12,7 +13,7 @@ const Product = () => {
   return (
     <div className='product'>
       <ProductDisplay product={product}/>
-      {console.log(product)}
+      <ReviewsDisplay/>
     </div>
   )
 }
