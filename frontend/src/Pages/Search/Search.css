@@ -1,0 +1,11 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1292px;
+  margin: 42px auto 68px auto;
+}
+
+.search-searchcontent {
+  flex: 1;
+  padding-left: 30px;
+}

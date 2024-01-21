@@ -1,0 +1,138 @@
+.searchfilter {
+  max-width: 300px;
+  padding-right: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.searchfilter-title-reset-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.searchfilter-title-reset-box h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.searchfilter-title-reset-box p {
+  font-family: 'Manrope', sans-serif;
+  color: rgba(0, 0, 0, 0.70);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.searchfilter h3 {
+  color: rgba(0, 0, 0, 0.80);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.searchfilters-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 39px;
+}
+
+.searchfilters-categories div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.searchfilers-prices-inputs {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.searchfilers-prices-inputs input {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+  padding: 8px 33px;
+  width: 30px;
+}
+
+.searchfilers-prices-inputs input::placeholder {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+.searchfilers-prices-inputs div {
+  width: 16px;
+  height: 1px;
+  background: #000;
+}
+
+.searchfilters-prices-stripe {
+  width: 218px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.30);
+  margin-top: 30px;
+  position: relative;
+}
+
+.searchfilers-stripe-inside {
+  width: 60px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchfilters-prices-dot-one {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchfilters-prices-dot-two {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: 105px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchfilter-price-box {
+  margin-bottom: 47px;
+}
+
+.searchfilters-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.searchfilters-reviews div {
+  display: flex;
+  align-items: end;
+  gap: 3px;
+}
+
+.searchfilters-reviews div .checkicon {
+  margin-right: 9px;
+}
+
+.searchfilters-reviews-option p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
