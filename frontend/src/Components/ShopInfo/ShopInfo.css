@@ -1,0 +1,54 @@
+.shopinfo-content {
+  display: flex;
+  gap: 73px;
+  max-width: 1292px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.shopinfo-content-left {
+  width: 206px;
+  height: 206px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.shopinfo-content-right h2 {
+  text-transform: none;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.shopinfo-reviews-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shopinfo-reviews-box p {
+  color: rgba(0, 0, 0, 0.70);
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.shopinfo-reviews-stars {
+  display: flex;
+  align-items: center;
+}
+
+.shopinfo-reviews-stars img {
+  width: 16px;
+}
+
+.shopinfo-description {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.80);
+  line-height: 22px;
+  padding-right: 323px;
+}

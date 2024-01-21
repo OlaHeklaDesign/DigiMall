@@ -6,7 +6,7 @@ import star_icon from '../Assets/star_icon.svg';
 
 const ProductItem = ({main_image, name, price, id}) => {
   return (
-    <Link to={`/product/${id}`}>
+    <Link to={`/product/${id}`} style={{textDecoration: "none"}} >
       <div className='productitem'>
         <div className="productitem-image-box">
           <img className="productitem-image" src={main_image} alt={name} />

@@ -1,0 +1,8 @@
+.shopproducts {
+  max-width: 1292px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 22px;
+  margin-bottom: 132px;
+}
