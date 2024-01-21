@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './ProductDisplay.css';
 import star_icon from '../Assets/star_icon.svg';
 import heart_icon from '../Assets/grey_heart_icon.svg';
+import { ShopContext, addToCart } from "../../Context/ShopContext";
 
 
 const ProductDisplay = (props) => {
 
   const {product} = props;
+  const {addToCart} = useContext(ShopContext);
 
   return (
     <div className='productdisplay'>
@@ -38,11 +40,11 @@ const ProductDisplay = (props) => {
         <p className="productdisplay-description">{product.description}</p>
           </div>
           <div className="productdisplay-buttons">
-          <button className="productdisplay-addtocart-button">Add To Cart</button>
-          <button className="productdisplay-addtowishlist-button">
-            <img src={heart_icon} alt="heart icon" />
-            <p>Add To Wishlist</p>
-          </button>
+            <button className="productdisplay-addtocart-button" onClick={() => {addToCart(product.id)}}>Add To Cart</button>
+            <button className="productdisplay-addtowishlist-button">
+              <img src={heart_icon} alt="heart icon" />
+              <p>Add To Wishlist</p>
+            </button>
           </div>
       </div>
     </div>
