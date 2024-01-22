@@ -82,6 +82,7 @@
   padding: 12px 39px;
   border: none;
   outline: none;
+  cursor: pointer;
  }
 
  .productdisplay-addtowishlist-button {

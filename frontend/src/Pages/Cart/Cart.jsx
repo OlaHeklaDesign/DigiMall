@@ -17,7 +17,8 @@ import arrow_promo from '../../Components/Assets/arrow-cart.svg';
 
 const Cart = () => {
 
-  const {getTotalCartAmount, all_product, cartItems, removeFromCart} = useContext(ShopContext);
+  const {getTotalCartAmount, all_product, removeFromCart, setCartItems, cartItems, contextValue} = useContext(ShopContext);
+  const quantityOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
     <div className='cart'>
@@ -35,22 +36,25 @@ const Cart = () => {
                 <p>Subtotal</p>
               </div>
             </div>
-            <div className="cart-item-box">
+            {all_product.map((e) => {
+              if(cartItems[e.id] > 0) {
+                return (
+                <div className="cart-item-box" key={e.id}>
               <div className='cart-item-infocontent'>
                 <div className="cart-item-infocontent-img">
-                  <img src={productPhoto} alt="" />
+                  <img src={e.main_image} alt="" />
                 </div>
                 <div className="cart-item-infocontent-texts">
                   <div>
-                    <p className="cart-item-shopname">LAKE & OAK</p>
-                    <p className="cart-item-productname">Premium Matcha + Adaptogens</p>
+                    <p className="cart-item-shopname">{e.shop}</p>
+                    <p className="cart-item-productname">{e.name}</p>
                   </div>
                   <div className='cart-item-buttons'>
                     <button className='cart-item-save-button'>
                       <img src={redHeart} alt="heart icon" />
                       Save for later
                     </button>
-                    <button className='cart-item-remove-button'>
+                    <button className='cart-item-remove-button' onClick={() => {removeFromCart(e.id)}}>
                       <img src={removeIcon} alt="remove icon" />
                       Remove
                     </button>
@@ -59,18 +63,37 @@ const Cart = () => {
               </div>
               <div className="cart-item-calcs">
                 <div className="cart-item-calc-count-container">
-                  <p className='cart-item-calc-price-of-count'>21$</p>
+                  <p className='cart-item-calc-price-of-count'>{e.price * cartItems[e.id]}$</p>
                   <div className="cart-item-calcs-select">
-                    <select name="" id="">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                    </select>
+                  <select
+                    name=""
+                    id=""
+                    value={cartItems[e.id]}
+                    onChange={(event) => {
+                      const selectedQuantity = parseInt(event.target.value, 10);
+                      setCartItems((prev) => {
+                        const updatedCart = { ...prev, [e.id]: selectedQuantity };
+                        console.log(updatedCart);
+                        return updatedCart;
+                      });
+                    }}
+                  >
+                    {quantityOptions.map((quantity) => (
+                      <option key={quantity} value={quantity}>
+                        {quantity}
+                      </option>
+                    ))}
+                  </select>
                     <img src={arrow} alt="arrow icon" />
                   </div>
                 </div>
-                <p className='cart-item-calc-total'>21$</p>
+                <p className='cart-item-calc-total'>{e.price}$</p>
               </div>
-            </div>
+                </div>
+                )
+              }
+              return null;
+            })}
           </div>
           <div className="cart-item-shipping">
             <h2>Delivery options</h2>

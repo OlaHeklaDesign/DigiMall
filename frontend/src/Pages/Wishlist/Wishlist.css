@@ -1,0 +1,22 @@
+.wishlist {
+  max-width: 1292px;
+  margin: 53px auto;
+}
+
+.wishlist h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.wishlist span {
+  margin-left: 22px;
+}
+
+.wishlist-products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
